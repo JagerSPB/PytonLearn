@@ -1,7 +1,4 @@
-print('ведите первое число: ')
-a = input()
+a = ('qwerty')
 
-b = input('Введите второе число: ')
-
-print(f"Сумма: {int(a)+int(b)}")
-
+for i in a:
+    print(i)
