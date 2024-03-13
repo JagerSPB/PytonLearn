@@ -1,4 +1,6 @@
 import math
+import random
+import sys
 
 # nKmDayly = 700
 # mTrack = 750
@@ -82,3 +84,44 @@ import math
 #     print("yes")
 # else:
 #     print("no")
+
+# coins = [1, 0, 0, 1, 0, 0]
+#
+# # Введите ваше решение ниже
+# count1 = 0
+# count0 = 0
+# for i in coins:
+#     if i == 1:
+#         count1 += 1
+#     elif i == 0:
+#         count0 += 1
+# if count1 > count0:
+#     print(count0)
+# else:
+#     print(count1)
+
+# 15. Иван Васильевич пришел на рынок и решил
+# купить два арбуза: один для себя, а другой для тещи.
+# Понятно, что для себя нужно выбрать арбуз
+# потяжелей, а для тещи полегче. Но вот незадача:
+# арбузов слишком много и он не знает как же выбрать
+# самый легкий и самый тяжелый арбуз? Помогите ему!
+# Пользователь вводит одно число N – количество
+# арбузов. Вторая строка содержит N чисел,
+# записанных на новой строчке каждое. Здесь каждое
+# число – это масса соответствующего арбуза
+
+
+print("Enter quantity: ")
+quantity = int(input())
+
+size = [random.randint(1, 10) for i in range(quantity)]
+print(size)
+sizeMax = size[0]
+sizeMin = size[0]
+for i in size:
+    if i >= sizeMax:
+        sizeMax = i
+    elif i <= sizeMin:
+        sizeMin = i
+print(f"Макс: {sizeMax}, Мин: {sizeMin}")
