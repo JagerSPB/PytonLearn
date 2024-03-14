@@ -184,12 +184,12 @@ import sys
 #         minDiferenceItem = list_1[i]
 # print(minDiferenceItem)
 
-k = 'car'
-sum = 0
-dictChars = {'AEIOULNSTRАВЕИНОРСТ': 1, 'DGДКЛМПУ': 2, 'BCMPБГЁЬЯ': 3, 'FHVWYЙЫ ': 4, 'KЖЗХЦЧ': 5, 'JXШЭЮ': 8,
-             'QZФЩЪ': 10}
-for i in k.upper():
-    for key in dictChars:
-        if i in key:
-            sum += dictChars[key]
-print(sum)
+# k = 'car'
+# sum = 0
+# dictChars = {'AEIOULNSTRАВЕИНОРСТ': 1, 'DGДКЛМПУ': 2, 'BCMPБГЁЬЯ': 3, 'FHVWYЙЫ ': 4, 'KЖЗХЦЧ': 5, 'JXШЭЮ': 8,
+#              'QZФЩЪ': 10}
+# for i in k.upper():
+#     for key in dictChars:
+#         if i in key:
+#             sum += dictChars[key]
+# print(sum)
