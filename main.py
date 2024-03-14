@@ -112,16 +112,84 @@ import sys
 # число – это масса соответствующего арбуза
 
 
-print("Enter quantity: ")
-quantity = int(input())
+# print("Enter quantity: ")
+# quantity = int(input())
+#
+# size = [random.randint(2, 15) for i in range(quantity)]
+# print(size)
+# sizeMax = size[0]
+# sizeMin = size[0]
+# for i in size:
+#     if i >= sizeMax:
+#         sizeMax = i
+#     elif i <= sizeMin:
+#         sizeMin = i
+# print(f"для себя: {sizeMax}, для тещи: {sizeMin}")
 
-size = [random.randint(1, 10) for i in range(quantity)]
-print(size)
-sizeMax = size[0]
-sizeMin = size[0]
-for i in size:
-    if i >= sizeMax:
-        sizeMax = i
-    elif i <= sizeMin:
-        sizeMin = i
-print(f"Макс: {sizeMax}, Мин: {sizeMin}")
+
+# Заданные значения суммы S и произведения P
+# s = 12
+# p = 27
+
+# Находим все возможные пары чисел X и Y
+# possible_pairs = []
+# for x in range(1, min(s, p) + 1):
+#     if p % x == 0:
+#         y = p // x
+#         if x + y == s and x <= y <= 1000:
+#             possible_pairs.append((x, y))
+#
+# # Выводим результат
+# for pair in possible_pairs:
+#     print(pair[0], pair[1])
+# possiblePairs = []
+
+
+# s = 12
+# p = 27
+# for x in range(1, s):
+#     if p % x == 0:
+#         y = p // x
+#         if x + y == s and x <= y <= 1000:
+#             print(x, y)
+# n = 16
+# list_1 = [2 * i for i in range(n)]
+# print(list_1)
+
+# Заданное значение N
+# n = 16
+# maxPower = int(math.log(n, 2))
+# list_1 = [2 ** i for i in range(maxPower + 1)]
+# for i in list_1:
+#     print(i)
+
+# list_1 = [1, 2, 3, 4, 5, 3, 3]
+# k = 3
+#
+# # Введите ваше решение ниже
+# count = 0
+# for i in list_1:
+#     if i == k:
+#         count += 1
+# print(count)
+
+#
+# list_1 = [1, 2, 3, 4, 5, 100]
+# k = 60
+# minDiference = k
+# minDiferenceItem = 0
+# for i in range(len(list_1)):
+#     if abs(list_1[i] - k) < minDiference:
+#         minDiference = abs(list_1[i] - k)
+#         minDiferenceItem = list_1[i]
+# print(minDiferenceItem)
+
+k = 'car'
+sum = 0
+dictChars = {'AEIOULNSTRАВЕИНОРСТ': 1, 'DGДКЛМПУ': 2, 'BCMPБГЁЬЯ': 3, 'FHVWYЙЫ ': 4, 'KЖЗХЦЧ': 5, 'JXШЭЮ': 8,
+             'QZФЩЪ': 10}
+for i in k.upper():
+    for key in dictChars:
+        if i in key:
+            sum += dictChars[key]
+print(sum)
