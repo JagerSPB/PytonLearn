@@ -2,6 +2,7 @@ import math
 import random
 import sys
 
+
 # nKmDayly = 700
 # mTrack = 750
 #
@@ -193,3 +194,92 @@ import sys
 #         if i in key:
 #             sum += dictChars[key]
 # print(sum)
+# sp = [-100, 12, "car", 4, False, 6, 8, True, "car", "car"]
+# # sp.append('HI')
+# # sp.insert(2, "three")
+# sp.extend([1, 2, 3, 4, 5])
+# print(sp)
+# #
+# # for i, value in enumerate(sp):
+# #     print(f"index = {i}, value = {value}")
+# sp.pop(3)
+# sp.remove("car")
+# print(sp)
+# Задача №17. Решение в группах Дан список чисел. Определите, сколько в нем встречается различных чисел.
+# Input: [1, 1, 2, 0, -1, 3, 4, 4] Output: 6
+# sp = [1, 1, 2, 0, -1, 3, 4, 4, 1, 3]
+# unique_numbers = set(sp)
+# count_unique = len(unique_numbers)
+# print(count_unique)
+
+
+# Задача №19. Решение в группах Дана последовательность из N целых чисел и число K. Необходимо сдвинуть
+# всю последовательность (сдвиг - циклический) на K элементов вправо, K – положительное число.
+# Input: [1, 2, 3, 4, 5] k = 2 Output: [4, 5, 1, 2, 3]
+# sp = [1, 2, 3, 4, 5]
+# k = int(input('Введите величину сдвига '))
+# # print(sp[-k:] + sp[:-k])
+# for _ in range(k):
+#     sp.insert(0, sp.pop())
+# print(sp)
+
+# def count_workers(sp):
+#     res = 0
+#     for item in sp:
+#         if isinstance(item, int):
+#             res += item
+#         else:
+#             res += count_workers(item)
+#     return res
+#
+#
+# count_angola = 18
+# count_new_york = [20, [10, 7]]
+# count_chicago = 15
+# count_usa = [count_new_york, count_chicago]
+# count_all = [count_angola, count_usa]
+# print(count_all)
+# print(count_workers(count_all))
+
+# Задача №31. Решение в группах Последовательностью Фибоначчи называется последовательность чисел a0 , a1 , ..., an , ...,
+# где a0 = 0, a1 = 1, ak = ak-1 + ak-2 (k > 1). Требуется найти N-е число Фибоначчи Input: 7 Output: 21
+# Число Фибоначи
+# def fib(n):
+#     if n in [1, 2]:
+#         return 1
+#     return fib(n - 1) + fib(n - 2)
+#
+#
+# list_1 = []
+# for i in range(1, 10):
+#     list_1.append(fib(i))
+# print(list_1)
+
+
+# n = int(input("Введите число: "))
+
+# def fib(n,a = 0,b = 1):
+#     if n == 0:
+#       return b
+#     return fib(n-1,b,a + b)
+
+# print(fib(n))
+# Задача №33. Решение в группах Хакер Василий получил доступ к классному журналу и хочет заменить все свои минимальные
+# оценки на максимальные. Напишите программу, которая заменяет оценки Василия, но наоборот: все максимальные – на
+# минимальные. Input: 5 -> 1 3 3 3 4 Output: 1 3 3 3 1
+# n = int(input("кол-во оценок "))
+# list1 = [random.randint(1, 50) for i in range(n + 1)]
+
+
+# grades = [5, 1, 3, 3, 3, 4]
+# 
+# min_grade = min(grades)
+# max_grade = max(grades)
+# 
+# for i in range(len(grades)):
+#     if grades[i] == min_grade:
+#         grades[i] = max_grade
+#     elif grades[i] == max_grade:
+#         grades[i] = min_grade
+# 
+# print(grades)
